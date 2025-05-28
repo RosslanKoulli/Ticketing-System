@@ -23,18 +23,18 @@ public class Main {
     private static Scanner scanner;
 
     /**
-     * Main method: Enthry point of the application
+     * Main method: Entry point of the application
      */
 
     public static void main(String[] args) {
-        // Initiliazise components
+        // Initialize components
         ticketService = new TicketService();
         scanner = new Scanner(System.in);
 
         // Display a welcome message
         displayWelcome ();
 
-        // Mian application looop
+        // Mian application loop
         boolean running = true;
         while(running) {
             displayMenu();
@@ -144,7 +144,7 @@ public class Main {
             return ;
         }
 
-        // Display request tpye
+        // Display request type
         System.out.println("\nSelect request type:");
         System.out.println("1. Security Issue (Priority 1 - Highest)");
         System.out.println("2. Network Issue (Priority 2)");
@@ -164,7 +164,7 @@ public class Main {
             return;
         }
 
-        // Get Descritpion
+        // Get Description
         System.out.print("Enter problem ticket description: ");
         String description = scanner.nextLine().trim();
         if(description.isEmpty()) {
@@ -182,7 +182,7 @@ public class Main {
     }
 
     /**
-     * Processes the next hgihest priority ticket
+     * Processes the next highest priority ticket
      */
     private static void processNextTicket() {
         System.out.println("\n===Process NEXT TICKET===");

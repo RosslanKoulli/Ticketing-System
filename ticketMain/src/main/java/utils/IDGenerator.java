@@ -2,24 +2,24 @@ package utils;
 
 /**
  * Utility class for generating unique tickets IDs.
- * Uses a simple icrementiing counter apporcach.
+ * Uses a simple incrementing counter approach.
  * In a real system, this might us UUID or database sequences
  *
- * This class uses the Singleton pattern to ensure only one isntance
- * exists throguht the application lifecycle
+ * This class uses the Singleton pattern to ensure only one instance
+ * exists through the application lifecycle
  *
  * @author rosslankoulli
  * @version 1.0
  */
 public class IDGenerator {
-    // Singleton isntance
+    // Singleton instance
     private static IDGenerator instance;
 
     // Counter for generating IDs, starts at 1000
     private int currentID;
 
     /**
-     * Private construcotr to prevent direct insatiation
+     * Private constructor to prevent direct instantiation
      */
 
     private IDGenerator() {
@@ -27,7 +27,7 @@ public class IDGenerator {
         this.currentID = 1000;
     }
 
-    /** Gets the singleton isntance of IDGenerator
+    /** Gets the singleton instance of IDGenerator
      *
      * @return The single instance of IDGenerator
      */
@@ -51,7 +51,7 @@ public class IDGenerator {
 
     /**
      * Gets the current ID without incrementing
-     * USeful for debugging or display purposes
+     * UUseful for debugging or display purposes
      *
      * @return The current ID value
      */
@@ -61,7 +61,7 @@ public class IDGenerator {
 
     /**
      * Resets the ID counter to initial value
-     * WARNING: Use only for testing or system reset
+     * WARNING Use only for testing or system reset WARNING
      */
 
     public synchronized void reset() {

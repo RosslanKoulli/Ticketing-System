@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * Ticket class represents an IT support request in the ticketing system,
- * Each ticket ha sunique ID, creator, priority, and other relveant information
+ * Each ticket has unique ID, creator, priority, and other relevant information
  *
  * Priority levels:
  * 1: Security issues (highest priority)
@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
  * 3: Software/app installation
  * 4: New Computer configuration (lowest Priority)
  *
- * @author rosslankoulli
+ * @author Rosslan Koulli
  * @version 1.0
  *
  */
@@ -127,7 +127,7 @@ public class Ticket {
 
     /**
      * Assigns an owner to the ticket
-     * @param owner Name of the peron responsible for solving the issue
+     * @param owner Name of the person responsible for solving the issue
      */
 
     public void setOwner(String owner ) {

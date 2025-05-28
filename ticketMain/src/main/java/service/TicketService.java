@@ -4,7 +4,7 @@ import dataStructure.PriorityQueue;
 import utils.IDGenerator;
 
 /**
- * Service class that provides business lgoic for the IT support ticket system.
+ * Service class that provides business logic for the IT support ticket system.
  * This class acts as an interface between the user Interface and the data structure.
  * It handles all ticket operations and maintains system state.
  *
@@ -51,7 +51,7 @@ public class TicketService {
             throw new IllegalArgumentException("Description cannot be null or empty");
         }
 
-        // Genrate unique ID
+        // Generate unique ID
         int ticketId = idGenerator.generateId();
 
         // Determine request type string and priority
@@ -92,9 +92,9 @@ public class TicketService {
         return ticket;
     }
     /**
-     * Processes the next hgihest priority ticket
+     * Processes the next highest priority ticket
      *
-     * @return the processed ticketm or null if queue is empty
+     * @return the processed ticket or null if queue is empty
      */
 
     public Ticket processNextTicket() {
@@ -170,7 +170,7 @@ public class TicketService {
      *
      * @param ticketId ID of the ticket
      * @param owner Name of the owner to assign
-     * @return true if successful, flase if ticket not found
+     * @return true if successful, false if ticket not found
      *
      */
     public boolean assignOwner(int ticketId, String owner) {
@@ -245,7 +245,7 @@ public class TicketService {
     }
 
     /**
-     * Gets the next ticket wihtout removing it
+     * Gets the next ticket without removing it
      *
      * @return The highest priority ticket, or null if empty
      */
@@ -294,7 +294,7 @@ public class TicketService {
 
     public void clearAllTickets() {
         ticketQueue.clear();
-        System.out.println("All tickets succesfully cleared from the system");
+        System.out.println("All tickets successfully cleared from the system");
     }
 
     /**

@@ -3,11 +3,11 @@ package dataStructure;
 import model.Ticket;
 
 /**
- * Custo Prirotiy queeu implementation using a min_heap data strcutre
+ * Custom Priority queue implementation using a min_heap data structure
  * This implementation does not use java collections as stated in the assignment reqs
  *
- * Min-Heap property: paetn priority <= Children priorities
- * (Lowrer pirority number - higher prioritry in our system
+ * Min-Heap property: parent priority <= Children priorities
+ * (Lower priority number - higher priority in our system
  *
  * Time Complexity:
  * Insert : 0(log n)
@@ -15,7 +15,7 @@ import model.Ticket;
  * Search: 0(n)
  * Update priority: 0(n) for search + 0(log n) for heapify
  *
- * @author rosslankoulli
+ * @author Rosslan Koulli
  * @version 1.0
  */
 public class PriorityQueue {
@@ -33,14 +33,14 @@ public class PriorityQueue {
     private static final int DEFAULT_CAPACITY = 100;
 
     /**
-     * Constructor with defaul capacity
+     * Constructor with default capacity
      */
 
     public PriorityQueue() {
         this(DEFAULT_CAPACITY);
     }
 
-    /** Construcotr with specified intial capacity
+    /** Constructor with specified initial capacity
      *
      * @param initialCapacity Initial size of the heap array
      */
@@ -168,7 +168,7 @@ public class PriorityQueue {
 
     /**
      * Restores heap property by bubbling down
-     * Also know as heapigy-down or sift-down
+     * Also know as heapify-down or sift-down
      *
      * @param index Starting index
      */
@@ -347,7 +347,7 @@ public class PriorityQueue {
 
     /**
      * Returns all tickets in an array (not in any particular order)
-     * Useful for diapliyng all tickets
+     * Useful for displaying all tickets
      *
      * @returns Array of all tickets
      */
