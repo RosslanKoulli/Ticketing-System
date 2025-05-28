@@ -8,7 +8,7 @@ package utils;
  * This class uses the Singleton pattern to ensure only one instance
  * exists through the application lifecycle
  *
- * @author rosslankoulli
+ * @author Rosslan Koulli
  * @version 1.0
  */
 public class IDGenerator {
